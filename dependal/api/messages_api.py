@@ -1182,7 +1182,7 @@ class MessagesApi:
     ) -> SendEmailResponse:
         """Send an email
 
-        Queue a transactional email for delivery.
+        Send a transactional email using the Dependal API.
 
         :param send_email_request: (required)
         :type send_email_request: SendEmailRequest
@@ -1255,7 +1255,7 @@ class MessagesApi:
     ) -> ApiResponse[SendEmailResponse]:
         """Send an email
 
-        Queue a transactional email for delivery.
+        Send a transactional email using the Dependal API.
 
         :param send_email_request: (required)
         :type send_email_request: SendEmailRequest
@@ -1328,7 +1328,7 @@ class MessagesApi:
     ) -> RESTResponseType:
         """Send an email
 
-        Queue a transactional email for delivery.
+        Send a transactional email using the Dependal API.
 
         :param send_email_request: (required)
         :type send_email_request: SendEmailRequest

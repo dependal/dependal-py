@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.tenant_message_events_page import TenantMessageEventsPage
+from dependal.models.tenant_message_events_page import TenantMessageEventsPage
 
 # TODO update the JSON string below
 json = "{}"

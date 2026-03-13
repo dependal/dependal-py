@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.send_email_request import SendEmailRequest
+from dependal.models.send_email_request import SendEmailRequest
 
 # TODO update the JSON string below
 json = "{}"

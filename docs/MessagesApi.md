@@ -1,4 +1,4 @@
-# openapi_client.MessagesApi
+# dependal.MessagesApi
 
 All URIs are relative to *https://api.dependal.com*
 
@@ -23,14 +23,14 @@ Returns the current delivery status for a message.
 * Api Key Authentication (ApiKeyAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.message_status_response import MessageStatusResponse
-from openapi_client.rest import ApiException
+import dependal
+from dependal.models.message_status_response import MessageStatusResponse
+from dependal.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.dependal.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = dependal.Configuration(
     host = "https://api.dependal.com"
 )
 
@@ -46,9 +46,9 @@ configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with dependal.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MessagesApi(api_client)
+    api_instance = dependal.MessagesApi(api_client)
     message_id = UUID('38400000-8cf0-11bd-b23e-10b96e4ef00d') # UUID | 
 
     try:
@@ -104,14 +104,14 @@ Returns a single message record for the authenticated tenant.
 * Api Key Authentication (ApiKeyAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.tenant_message_response import TenantMessageResponse
-from openapi_client.rest import ApiException
+import dependal
+from dependal.models.tenant_message_response import TenantMessageResponse
+from dependal.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.dependal.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = dependal.Configuration(
     host = "https://api.dependal.com"
 )
 
@@ -127,9 +127,9 @@ configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with dependal.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MessagesApi(api_client)
+    api_instance = dependal.MessagesApi(api_client)
     message_id = UUID('38400000-8cf0-11bd-b23e-10b96e4ef00d') # UUID | Message request ID
 
     try:
@@ -185,14 +185,14 @@ Returns the event timeline for a single tenant message, including internal proce
 * Api Key Authentication (ApiKeyAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.tenant_message_events_response import TenantMessageEventsResponse
-from openapi_client.rest import ApiException
+import dependal
+from dependal.models.tenant_message_events_response import TenantMessageEventsResponse
+from dependal.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.dependal.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = dependal.Configuration(
     host = "https://api.dependal.com"
 )
 
@@ -208,9 +208,9 @@ configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with dependal.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MessagesApi(api_client)
+    api_instance = dependal.MessagesApi(api_client)
     message_id = UUID('38400000-8cf0-11bd-b23e-10b96e4ef00d') # UUID | Message request ID
     cursor = 'cursor_example' # str | Opaque pagination cursor returned by a previous response (optional)
     limit = 50 # int | Maximum number of events to return (optional) (default to 50)
@@ -270,14 +270,14 @@ Returns paginated message logs for the authenticated tenant.
 * Api Key Authentication (ApiKeyAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.tenant_messages_response import TenantMessagesResponse
-from openapi_client.rest import ApiException
+import dependal
+from dependal.models.tenant_messages_response import TenantMessagesResponse
+from dependal.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.dependal.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = dependal.Configuration(
     host = "https://api.dependal.com"
 )
 
@@ -293,9 +293,9 @@ configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with dependal.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MessagesApi(api_client)
+    api_instance = dependal.MessagesApi(api_client)
     cursor = 'cursor_example' # str | Opaque pagination cursor returned by a previous response (optional)
     limit = 50 # int | Maximum number of messages to return (optional) (default to 50)
 
@@ -345,22 +345,22 @@ Name | Type | Description  | Notes
 
 Send an email
 
-Queue a transactional email for delivery.
+Send a transactional email using the Dependal API.
 
 ### Example
 
 * Api Key Authentication (ApiKeyAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.send_email_request import SendEmailRequest
-from openapi_client.models.send_email_response import SendEmailResponse
-from openapi_client.rest import ApiException
+import dependal
+from dependal.models.send_email_request import SendEmailRequest
+from dependal.models.send_email_response import SendEmailResponse
+from dependal.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.dependal.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = dependal.Configuration(
     host = "https://api.dependal.com"
 )
 
@@ -376,9 +376,9 @@ configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with dependal.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MessagesApi(api_client)
+    api_instance = dependal.MessagesApi(api_client)
     send_email_request = {"from":"Dependal <noreply@dependal.com>","to":"developers@dependal.com","subject":"Dependal test send","html":"<p>Hello 👋</p><p>This is a transactional test email from Dependal.</p>"} # SendEmailRequest | 
 
     try:

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.error_body import ErrorBody
+from dependal.models.error_body import ErrorBody
 
 # TODO update the JSON string below
 json = "{}"

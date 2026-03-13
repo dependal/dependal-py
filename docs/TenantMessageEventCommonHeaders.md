@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.tenant_message_event_common_headers import TenantMessageEventCommonHeaders
+from dependal.models.tenant_message_event_common_headers import TenantMessageEventCommonHeaders
 
 # TODO update the JSON string below
 json = "{}"

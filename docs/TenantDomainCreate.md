@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.tenant_domain_create import TenantDomainCreate
+from dependal.models.tenant_domain_create import TenantDomainCreate
 
 # TODO update the JSON string below
 json = "{}"

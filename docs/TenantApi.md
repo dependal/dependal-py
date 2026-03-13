@@ -1,4 +1,4 @@
-# openapi_client.TenantApi
+# dependal.TenantApi
 
 All URIs are relative to *https://api.dependal.com*
 
@@ -19,14 +19,14 @@ Records acceptance of the current required policy version for the authenticated 
 * Api Key Authentication (ApiKeyAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.tenant_policies_accept_response import TenantPoliciesAcceptResponse
-from openapi_client.rest import ApiException
+import dependal
+from dependal.models.tenant_policies_accept_response import TenantPoliciesAcceptResponse
+from dependal.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.dependal.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = dependal.Configuration(
     host = "https://api.dependal.com"
 )
 
@@ -42,9 +42,9 @@ configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with dependal.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TenantApi(api_client)
+    api_instance = dependal.TenantApi(api_client)
 
     try:
         # Accept tenant policies

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.tenant_message_provider_meta import TenantMessageProviderMeta
+from dependal.models.tenant_message_provider_meta import TenantMessageProviderMeta
 
 # TODO update the JSON string below
 json = "{}"

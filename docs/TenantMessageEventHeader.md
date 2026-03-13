@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.tenant_message_event_header import TenantMessageEventHeader
+from dependal.models.tenant_message_event_header import TenantMessageEventHeader
 
 # TODO update the JSON string below
 json = "{}"

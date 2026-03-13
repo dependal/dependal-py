@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.tenant_domain_check import TenantDomainCheck
+from dependal.models.tenant_domain_check import TenantDomainCheck
 
 # TODO update the JSON string below
 json = "{}"

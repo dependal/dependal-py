@@ -1,4 +1,4 @@
-# openapi_client.DomainsApi
+# dependal.DomainsApi
 
 All URIs are relative to *https://api.dependal.com*
 
@@ -22,14 +22,14 @@ Re-checks the verification status of a tenant domain and returns the latest prov
 * Api Key Authentication (ApiKeyAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.tenant_domain_check_response import TenantDomainCheckResponse
-from openapi_client.rest import ApiException
+import dependal
+from dependal.models.tenant_domain_check_response import TenantDomainCheckResponse
+from dependal.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.dependal.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = dependal.Configuration(
     host = "https://api.dependal.com"
 )
 
@@ -45,9 +45,9 @@ configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with dependal.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DomainsApi(api_client)
+    api_instance = dependal.DomainsApi(api_client)
     domain = 'domain_example' # str | Domain name to check
 
     try:
@@ -103,15 +103,15 @@ Registers a domain for the authenticated tenant and begins the verification proc
 * Api Key Authentication (ApiKeyAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.tenant_domain_create_request import TenantDomainCreateRequest
-from openapi_client.models.tenant_domain_create_response import TenantDomainCreateResponse
-from openapi_client.rest import ApiException
+import dependal
+from dependal.models.tenant_domain_create_request import TenantDomainCreateRequest
+from dependal.models.tenant_domain_create_response import TenantDomainCreateResponse
+from dependal.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.dependal.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = dependal.Configuration(
     host = "https://api.dependal.com"
 )
 
@@ -127,9 +127,9 @@ configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with dependal.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DomainsApi(api_client)
+    api_instance = dependal.DomainsApi(api_client)
     tenant_domain_create_request = {"domain":"yourdomain.com"} # TenantDomainCreateRequest | 
 
     try:
@@ -186,14 +186,14 @@ Returns details for a tenant domain, including SES verification status and requi
 * Api Key Authentication (ApiKeyAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.tenant_domain_detail_response import TenantDomainDetailResponse
-from openapi_client.rest import ApiException
+import dependal
+from dependal.models.tenant_domain_detail_response import TenantDomainDetailResponse
+from dependal.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.dependal.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = dependal.Configuration(
     host = "https://api.dependal.com"
 )
 
@@ -209,9 +209,9 @@ configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with dependal.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DomainsApi(api_client)
+    api_instance = dependal.DomainsApi(api_client)
     domain = 'domain_example' # str | Domain name to retrieve
 
     try:
@@ -267,14 +267,14 @@ Returns the domains registered for the authenticated tenant.
 * Api Key Authentication (ApiKeyAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.tenant_domains_response import TenantDomainsResponse
-from openapi_client.rest import ApiException
+import dependal
+from dependal.models.tenant_domains_response import TenantDomainsResponse
+from dependal.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.dependal.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = dependal.Configuration(
     host = "https://api.dependal.com"
 )
 
@@ -290,9 +290,9 @@ configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with dependal.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DomainsApi(api_client)
+    api_instance = dependal.DomainsApi(api_client)
 
     try:
         # List tenant domains

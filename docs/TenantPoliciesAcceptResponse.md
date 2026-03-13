@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.tenant_policies_accept_response import TenantPoliciesAcceptResponse
+from dependal.models.tenant_policies_accept_response import TenantPoliciesAcceptResponse
 
 # TODO update the JSON string below
 json = "{}"
