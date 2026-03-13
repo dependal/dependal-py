@@ -1,3 +1,6 @@
+[![PyPI](https://img.shields.io/pypi/v/dependal.svg)](https://pypi.org/project/dependal/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/dependal.svg)](https://pypi.org/project/dependal/)
+
 # Dependal Python SDK
 
 Official Python SDK for the **Dependal transactional email API**.

@@ -17,8 +17,8 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://dependal.com"
-Repository = "https://github.com/dependal/python-sdk"
 Documentation = "https://dependal.com/docs"
+Repository = "https://github.com/dependal/dependal-py"
 
 [tool.poetry]
 requires-poetry = ">=2.0"
