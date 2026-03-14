@@ -1,6 +1,6 @@
 [project]
 name = "dependal"
-version = "1.0.2"
+version = "1.0.4"
 description = "Official Python SDK for the Dependal API."
 authors = [
   { name = "Dependal Support", email = "support@dependal.com" }

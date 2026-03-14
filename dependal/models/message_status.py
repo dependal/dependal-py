@@ -37,7 +37,7 @@ class MessageStatus(BaseModel):
     to: StrictStr
     var_from: StrictStr = Field(alias="from")
     subject: StrictStr
-    sending_message_id: StrictStr = Field(description="Provider message identifier", alias="sendingMessageId")
+    sending_message_id: Optional[StrictStr] = Field(description="Provider message identifier", alias="sendingMessageId")
     __properties: ClassVar[List[str]] = ["messageId", "status", "reason", "createdAt", "updatedAt", "to", "from", "subject", "sendingMessageId"]
 
     model_config = ConfigDict(
@@ -83,6 +83,11 @@ class MessageStatus(BaseModel):
         # and model_fields_set contains the field
         if self.reason is None and "reason" in self.model_fields_set:
             _dict['reason'] = None
+
+        # set to None if sending_message_id (nullable) is None
+        # and model_fields_set contains the field
+        if self.sending_message_id is None and "sending_message_id" in self.model_fields_set:
+            _dict['sendingMessageId'] = None
 
         return _dict
 
